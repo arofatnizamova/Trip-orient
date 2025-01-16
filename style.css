@@ -14,6 +14,9 @@ body{
 .text-orange{
 	color: var(--color-orange);
 }
+.text-corp{
+	color: var(--color-blue);
+}
 .bg-blue{
 	background: var(--color-blue);
 }
@@ -272,6 +275,10 @@ a{
 .accordion-button:not(.collapsed)::after{
 	filter: contrast(0%) brightness(2);
 }
+.rounded-custom{
+	border-radius: 25px;
+	overflow: hidden;
+}
 @media(max-width: 1650px){
     .fs-paragraph-2{
 		font-size: 18px;
@@ -312,6 +319,9 @@ a{
 	}
 	.w-lg-55{
 		width: 60%;
+	}
+	.fs-paragraph-3{
+		font-size: 16px;
 	}
 }
 @media(max-width: 768px){
