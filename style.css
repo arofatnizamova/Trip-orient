@@ -51,18 +51,33 @@ body{
 .w-lg-55{
 	width: 55%;
 }
+a{
+	text-decoration: none;
+	color: inherit;
+	font-weight: inherit;
+}
+.navbar-toggler:focus {
+	box-shadow: none;
+}
+.dropdown-menu{
+	--bs-dropdown-min-width: unset;
+}
+.dropdown-toggle::after{
+	display: none;
+}
 /*contents*/
 .main-header{
 	position: absolute;
 	top: 0;
 	z-index: 2;
 	width: 100%;
+	color: white;
 }
 .nav-link{
-	color: white;
 	font-size: 18px;
+	color: unset;
 }
-.nav-link:hover, .nav-link:focus{
+.link-custom.nav-link:hover, .link-custom.nav-link:focus{
 	color: rgba(255, 255, 255, 0.664);
 }
 .navbar-nav{
@@ -85,10 +100,10 @@ body{
 	position: relative;
 	padding-bottom: 150px;
 }
-.navbar-toggler-icon{
+.navbar-toggler-custom.navbar-toggler-icon{
 	background-image: url('icons/codicon_menu.svg');
 }
-.collapse.show{
+.collapse-dark.show{
 	background: black;
 }
 .slider-buttons-box{
@@ -135,7 +150,7 @@ body{
 	font-size: 20px;
 }
 .slick-dots{
-	bottom: -50px;
+	bottom: -10px;
 }
 .tour-img{
 	height: 100%;
@@ -220,6 +235,16 @@ body{
 	color: #74BEFF;
 	text-decoration: underline;
 }
+.banner-title-box{
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.white-line{
+	height: 1px;
+	background-color: #D9D9D9;
+	width: 540px;
+}
 @media(max-width: 1650px){
     .fs-paragraph-2{
 		font-size: 18px;
@@ -274,6 +299,9 @@ body{
 	.testimonial-card{
 		width: 100%;
 	}
+	.white-line{
+		width: 300px;
+	}
 }
 @media(max-width: 576px){
 	.container-fluid{
@@ -315,6 +343,9 @@ body{
 	.testimonial-card{
 		box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.11);
 	}
+		.white-line {
+			width: 200px;
+		}
 	
 }
 @media(max-width: 420px){
@@ -335,5 +366,8 @@ body{
 		font-size: 12px;
 		outline: 1px solid white;
 		padding: 0 5px;
+	}
+	.h-sm-250{
+		height: 250px;
 	}
 }
