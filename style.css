@@ -245,6 +245,33 @@ a{
 	background-color: #D9D9D9;
 	width: 540px;
 }
+.accordion-button:not(.collapsed) {
+	background-color: var(--color-blue);
+	color: white;
+	box-shadow: none;
+}
+.accordion-button:focus {
+	box-shadow: unset;
+}
+.accordion-button{
+	background-color: #F6F7F8;
+	border-radius: 20px !important;
+}
+.accordion-collapse{
+	background: #F6F7F8;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+.accordion-item{
+	border: unset;
+}
+.accordion-button:not(.collapsed){
+	border-bottom-right-radius: unset !important;
+	border-bottom-left-radius: unset !important;
+}
+.accordion-button:not(.collapsed)::after{
+	filter: contrast(0%) brightness(2);
+}
 @media(max-width: 1650px){
     .fs-paragraph-2{
 		font-size: 18px;
