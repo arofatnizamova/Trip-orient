@@ -68,6 +68,9 @@ a{
 .dropdown-toggle::after{
 	display: none;
 }
+.w-fit-content{
+	width: fit-content;
+}
 /*contents*/
 .main-header{
 	position: absolute;
