@@ -79,6 +79,12 @@ a{
 }
 .dropdown-menu{
 	--bs-dropdown-min-width: unset;
+	--bs-dropdown-border-radius: unset;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+.min-width-250{
+	min-width: 250px;
 }
 .dropdown-toggle::after{
 	display: none;
@@ -128,6 +134,16 @@ a{
 .btn-white:hover{
 	background: var(--color-orange);
 }
+.dropdown-item.active,
+.dropdown-item:active {
+	background-color: unset;
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+	color: var(--color-blue);
+	background-color: unset;
+}
 /*contents*/
 .main-header{
 	position: absolute;
@@ -161,7 +177,7 @@ a{
 	margin-top: -120px;
 	z-index: 3;
 	position: relative;
-	padding-bottom: 150px;
+	padding-bottom: 100px;
 }
 .bg-wave-2{
 	background-image: url('img/bg-vawe-2.png');
@@ -353,6 +369,12 @@ a{
 	background-image: url('img/tour-card/background.png');
 	background-size: cover;
 	background-repeat: no-repeat;
+}
+.blue-underline{
+	border-bottom: 0.5px solid #2079C7;
+}
+.blue-underline:last-of-type {
+	border-bottom: none;
 }
 @media (min-width: 1650px) {
 
