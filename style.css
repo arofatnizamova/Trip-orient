@@ -42,6 +42,9 @@ body{
 .fs-paragraph-3{
 	font-size: 22px;
 }
+.fs-paragraph-4{
+	font-size: clamp(18px, 2vw, 46px);
+}
 .fs-7{
 	font-size: 0.9rem;
 }
@@ -86,12 +89,17 @@ a{
 	padding-left: 0;
 	background: transparent;
 }
+.form-control-dark-text{
+	border-bottom: 2px solid rgba(0, 0, 0, 0.7);
+}
 
 .form-control::placeholder {
 	color: rgba(255, 255, 255, 0.2);
 	font-weight: 300;
 }
-
+.form-control-dark-text::placeholder {
+	color: rgba(0, 0, 0, 0.2);
+}
 .form-control:focus {
 	box-shadow: unset;
 	border-color: black;
@@ -325,6 +333,22 @@ a{
 .rounded-custom{
 	border-radius: 25px;
 	overflow: hidden;
+}
+.figure-background{
+	background-image: url('img/tour-card/background.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+@media (min-width: 1650px) {
+
+	.container,
+	.container-lg,
+	.container-md,
+	.container-sm,
+	.container-xl,
+	.container-xxl {
+		max-width: 1570px;
+	}
 }
 @media(max-width: 1650px){
     .fs-paragraph-2{
