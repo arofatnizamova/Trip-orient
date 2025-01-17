@@ -1,5 +1,6 @@
 :root{
 	--font-family: "Kanit", sans-serif;
+	--font-family-2: "Inter", sans-serif;
 	--color-orange: #FF6000;
 	--color-blue: #2079C7;
 }
@@ -7,6 +8,9 @@
 body{
 	font-family: var(--font-family);
 	font-weight: 400;
+}
+.ff-inter{
+	font-family: 'Inter';
 }
 .container-fluid{
 	padding: 0 60px;
@@ -25,6 +29,9 @@ body{
 }
 .fs-title-2{
 	font-size: 30px;
+}
+.fs-title-3{
+	font-size: clamp(22px, 2vw, 56px);
 }
 .fs-paragraph{
 	font-size: 18px;
@@ -47,6 +54,7 @@ body{
 	font-weight: 500;
 	padding: 10px 80px;
 	border: 2px solid white;
+	border-radius: 100px;
 }
 .h-fit-content{
 	height: fit-content;
@@ -70,6 +78,43 @@ a{
 }
 .w-fit-content{
 	width: fit-content;
+}
+.form-control {
+	border: none;
+	border-bottom: 2px solid rgba(255,255, 255, 0.7);
+	border-radius: 0;
+	padding-left: 0;
+	background: transparent;
+}
+
+.form-control::placeholder {
+	color: rgba(255, 255, 255, 0.2);
+	font-weight: 300;
+}
+
+.form-control:focus {
+	box-shadow: unset;
+	border-color: black;
+}
+
+.form-check-input:checked {
+	background-color: transparent;
+	border-color: white;
+}
+
+.form-check-input:focus {
+	box-shadow: none;
+}
+.form-check-input[type=checkbox] {
+	border-radius: unset; 
+}
+
+.btn-white{
+   background: white;
+   color: var(--color-blue);
+}
+.btn-white:hover{
+	background: var(--color-orange);
 }
 /*contents*/
 .main-header{
@@ -194,7 +239,6 @@ a{
 	background: var(--color-blue);
 	outline: none;
 	border: none;
-	border-radius: 100px;
 
 }
 .btn-blue:hover{
