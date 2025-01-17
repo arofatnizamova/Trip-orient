@@ -3,6 +3,7 @@
 	--font-family-2: "Inter", sans-serif;
 	--color-orange: #FF6000;
 	--color-blue: #2079C7;
+	--color-grey: #F3F3F3;
 }
 /* roots and utils*/
 body{
@@ -23,6 +24,9 @@ body{
 }
 .bg-blue{
 	background: var(--color-blue);
+}
+.bg-light-grey{
+	background: var(--color-grey);
 }
 .fs-title{
 	font-size: 60px;
@@ -158,6 +162,17 @@ a{
 	z-index: 3;
 	position: relative;
 	padding-bottom: 150px;
+}
+.bg-wave-2{
+	background-image: url('img/bg-vawe-2.png');
+	background-size: cover;
+	padding-bottom: 260px;
+	background-repeat: no-repeat;
+	margin-top: -180px;
+	z-index: 3;
+}
+.m-custom{
+	padding-bottom: 200px;
 }
 .navbar-toggler-custom.navbar-toggler-icon{
 	background-image: url('icons/codicon_menu.svg');
